@@ -44,9 +44,9 @@ long long multiply_karatsuba(long long a, long long b, int n) {
 }
 
 int main() {
-    long long a = 4568;
-    long long b = 3275;
-    int n = 4;
+    long long a = 342;
+    long long b = 231;
+    int n = 3;
 
     cout << "Starting Karatsuba Multiplication: " << a << " * " << b << endl << endl;
 

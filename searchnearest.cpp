@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-int Search(int arr[], int n, int M, int k){
+void Search(int arr[], int n, int M, int k){
     int l_bs = 0, r_bs = 0;
     int i = 0;
     while(l_bs <= r_bs){
