@@ -25,7 +25,7 @@ int Max_Subarray_Sum(int A[], int n) {
         lsum = max(lsum, sum);
     }
 
-    return max(max(lsum, rsum), lsum + rsum);
+    return max(max(Lmss, Rmss), lsum + rsum);
 }
 
 int main() {
