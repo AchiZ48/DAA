@@ -3,7 +3,7 @@
 using namespace std;
 
 void Search(int arr[], int n, int M, int k){
-    int l_bs = 0, r_bs = 0;
+    int l_bs = 0, r_bs = n-1;
     int i = 0;
     while(l_bs <= r_bs){
         int mid = (l_bs + r_bs)/2;
@@ -30,13 +30,13 @@ void Search(int arr[], int n, int M, int k){
             right++;
             count++;
         } else if(right >= n){
-            left++;
+            left--;
             count++;
         } else if(abs(arr[left] - M) > abs(arr[right] - M)){
             right++;
             count++;
         } else {
-            left++;
+            left--;
             count++;
         }
         
@@ -53,7 +53,7 @@ void Search(int arr[], int n, int M, int k){
 int main(){
     int A[] = {10, 12, 15, 17, 18, 20, 25};
     int n = sizeof(A) / sizeof(A[0]);
-    int M = 8;
+    int M = 16;
     int k = 2;
     Search(A, n, M, k);
     return 0;
